@@ -1,0 +1,470 @@
+* {
+  font-family: 'Tajawal', sans-serif !important;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, div, span, a, button, input, textarea {
+  font-family: 'Tajawal', sans-serif !important;
+
+}
+
+
+body {
+  background-color: #1e76bb; /* لون أزرق مأخوذ من الصورة */
+  background-image: none;
+}
+
+
+
+
+/* الخط الافتراضي للصفحة */
+body, h1, h2, h3, p, div {
+  font-family: 'Janna LT', sans-serif !important;
+}
+
+body {
+  margin: 0;
+  color: #325d7d;
+  background: linear-gradient(135deg, #f4f8fb, #e1f0f7, #d1e7f0);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+/* شريط التنقل */
+.navbar {
+  background-color: #fff;
+  border-bottom: 3px solid #35acc0;
+  padding: 10px 20px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar-logo img {
+  height: 65px;
+}
+
+.navbar-toggle {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #325d7d;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #325d7d;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #309dcf;
+}
+
+/* القائمة في الجوال */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links li {
+    text-align: right;
+    padding: 10px 20px;
+  }
+}
+
+/* الهيدر */
+header {
+  background: url('المستشفى خلفية 2.png') center/cover no-repeat;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* الأقسام */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2em;
+  color: #309dcf;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.section h2::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #309dcf;
+  margin: 12px auto 0;
+  border-radius: 50px;
+}
+
+/* البطاقات */
+.card {
+  background: white;
+  margin: 20px auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  max-width: 900px;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: right;
+  font-size: 1.1em;
+  line-height: 1.9em;
+}
+
+.card-body h3 {
+  color: #309dcf;
+  margin-bottom: 10px;
+}
+
+/* شبكة الصور */
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.image-grid img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* الفوتر */
+footer {
+  background: #325d7d;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+/* زر العودة للأعلى */
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  background-color: #309dcf;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+
+/* حركة الخلفية المتدرجة */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* شاشة التحميل */
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease;
+}
+
+.loader::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 6px solid #309dcf;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+h2::after,
+h2 span::after {
+  content: none !important;
+  display: none !important;
+}
+
+h2 {
+  border: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+.navbar {
+  border-bottom: none; /* أو: border-bottom: 1px solid transparent; */
+  box-shadow: none;
+}
+@font-face {
+  font-family: 'Janna';
+  src: url('fonts\JannaLT-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/* تنسيق صور الاحتفالات والحملات والتطوع */
+#celebrations img,
+#campaigns .image-grid img,
+#volunteering .image-grid img {
+  border: 6px solid white;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* حركة عند تمرير الماوس */
+#celebrations img:hover,
+#campaigns .image-grid img:hover,
+#volunteering .image-grid img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
+}
+
+.fancy-photo {
+  background: white;
+  border-radius: 20px;
+  padding: 10px;
+  width: 240px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fancy-photo img {
+  width: 100%;
+  display: block;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fancy-photo:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.25);
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+.greeting-btn {
+  margin-top: 10px;
+  background-color: white;
+  color: #325d7d;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.greeting-btn:hover {
+  background-color: #e6f4f9;
+}
+
+.greeting-popup {
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background: white;
+  max-width: 600px;
+  width: 90%;
+  padding: 30px;
+  border-radius: 15px;
+  font-size: 1em;
+  line-height: 1.9em;
+  color: #333;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #999;
+}
+.department-swiper {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.swiper-slide {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  font-family: 'Cairo', sans-serif;
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.swiper-slide:hover {
+  transform: translateY(-5px);
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.swiper-slide h3 {
+  color: #309dcf;
+  font-size: 1.3em;
+  margin: 10px 0;
+}
+
+.swiper-slide p {
+  font-size: 1.05em;
+  color: #444;
+  line-height: 2em;
+  padding: 0 10px;
+  word-break: break-word;
+  white-space: normal;
+  min-height: 70px;
+}
+.department-swiper {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.swiper-slide {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  font-family: 'Cairo', sans-serif;
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.swiper-slide:hover {
+  transform: translateY(-5px);
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.swiper-slide h3 {
+  color: #309dcf;
+  font-size: 1.3em;
+  margin: 10px 0;
+}
+
+.swiper-slide p {
+  font-size: 1.05em;
+  color: #444;
+  line-height: 2em;
+  padding: 0 10px;
+  word-break: break-word;
+  white-space: normal;
+  min-height: 70px;
+}
+.swiper-slide p {
+  font-size: 1.1em; /* حجم أكبر */
+  color: #1e2e50;   /* أزرق غامق */
+  line-height: 2em;
+  padding: 0 10px;
+  text-align: center;
+  font-weight: 500;
+}
+.department-swiper {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 0;
+  direction: rtl;
+}
+
+
+body {
+  font-family: 'Janna', sans-serif;
+}
+

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مجلة التواصل الداخلي - تجمع تبوك الصحي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <script src="java.js"></script>
+  <style>
+    body {
+      background-color: #1e76bb; /* لون أزرق مأخوذ من الصورة */
+      background-image: none;
+    }
+    
+
+    .image-grid img,
+    #celebrations img {
+      border: 6px solid white;
+      border-radius: 18px;
+      background: #ffffff;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .image-grid img:hover,
+    #celebrations img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    }
+  </style>
+</head>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-logo">
+        <img src="logo-removebg-preview.png" alt="شعار المستشفى" />
+      </div>
+      <div class="navbar-toggle" onclick="toggleMenu()">☰</div>
+      <ul class="navbar-links" id="navbarLinks">
+        <li><a href="#intro">المقدمة</a></li>
+        <li><a href="#achievements">الإنجازات</a></li>
+        <li><a href="#eid">التهاني</a></li>
+        <li><a href="#celebrations">الأفراح</a></li>
+        <li><a href="#condolences">التعازي</a></li>
+        <li><a href="#gathering">اللقاء</a></li>
+        <li><a href="#employee-award">التحفيز</a></li>
+        <li><a href="#campaigns">الحملات</a></li>
+        <li><a href="#volunteering">التطوع</a></li>
+        <li><a href="#department-cards">الأقسام</a></li>
+        <li><a href="#medical-info">معلومة طبية</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header style="
+  position: relative;
+  text-align: center;
+  padding: 120px 20px 100px;
+  background: linear-gradient(to bottom, rgba(168, 170, 172, 0.45), rgba(50, 93, 125, 0.65)), url('صورة المستشفى.png') no-repeat center center;
+  background-size: cover;
+  color: white;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.2);
+  overflow: hidden;
+">
+
+  <!-- تأثير زخرفي خفيف -->
+  <div style="
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(circle at top right, rgba(255,255,255,0.08), transparent 70%);
+    z-index: 1;
+  "></div>
+
+  <!-- النص -->
+  <div style="position: relative; z-index: 2;">
+    <h1 style="margin-bottom: 15px; font-size: 2.8em; font-weight: bold; text-shadow: 1px 1px 5px rgba(0,0,0,0.3);">
+      تجمع تبوك الصحي
+    </h1>
+    <p style="margin: 5px 0; font-size: 1.2em;">مستشفى الملك خالد بتبوك</p>
+    <p style="margin: 5px 0; font-size: 1.1em;">إدارة التواصل الداخلي - مارس 2025</p>
+  </div>
+
+</header>
+
+
+
+  <section id="welcome-banner" class="section" style="padding: 60px 0;" data-aos="zoom-in">
+    <div style="max-width: 85%; margin: auto; border-radius: 25px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.15); background: #f9f9f9;">
+      
+<!-- قسم التهنئة بالصورة والاقتباس -->
+<section data-aos="fade-up" style="padding: 30px;">
+
+  <!-- عنوان -->
+  <h2 style="text-align: center; color: #325d7d; margin-bottom: 25px; font-size: 2em;">كلمات خالدة</h2>
+
+  <!-- صورة التهنئة -->
+  <div style="text-align: center; margin-bottom: 30px;">
+    <img src="عيد سعيد.jpg" alt="تهنئة العيد" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  </div>
+
+  <!-- الاقتباس -->
+  <div style="max-width: 800px; margin: auto; text-align: center; font-size: 1.4em; line-height: 2em; color: #325d7d; background: #e6f4f9; padding: 20px; border-radius: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+    "ثروتنا الأولى التي لا تعادلها ثروة مهما بلغت: شعب طموح، معظمه من الشباب، هو فخر بلادنا وضمان مستقبلها بعون الله."
+    
+    <!-- اسم القائل -->
+    <p style="margin-top: 20px; font-size: 0.9em; color: #0f2b41; font-weight: normal;">
+       ولي العهد الأمير محمد بن سلمان
+    </p>
+  </div>
+</section>
+
+  
+    </div>
+  </section> 
+  
+  <section class="section" id="intro" data-aos="fade-up" style="padding: 70px 20px; background-color: #f9fbfd;">
+    <div style="max-width: 1000px; margin: auto; display: flex; flex-wrap: wrap; align-items: center; gap: 40px;">
+  
+      <!-- الصورة الجانبية -->
+      <div style="flex: 0 0 140px; text-align: center;">
+        <img src="عيدك دائرية.png" alt="صورة رمزية" style="width: 140px; height: 140px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+      </div>
+  
+      <!-- نص المقدمة -->
+      <div style="flex: 1; font-size: 1em; line-height: 1.9em; color: #333; text-align: right;">
+        <h2 style="color: #325d7d; font-size: 1.7em; margin-bottom: 20px;">المقدمة</h2>
+        <p style="margin-bottom: 15px;">
+          الحمد لله رب العالمين، والصلاة والسلام على أشرف الأنبياء والمرسلين، نبينا محمدٍ، وعلى آله وصحبه أجمعين. أما بعد،،
+        </p>
+        <p>
+          يسرّنا أن نُقدّم لكم عبر هذه المجلة ملخصًا لأبرز الجهود والأنشطة التي أشرفت على تنفيذها إدارة التواصل الداخلي بمستشفى الملك خالد بتبوك التابع لتجمع تبوك الصحي خلال شهر مارس لعام 2025، 
+          سائلين الله أن يُسهم هذا العمل في تعزيز روح الانتماء، وتحقيق أهدافنا في خدمة المريض والمجتمع.
+        </p>
+      </div>
+  
+    </div>
+  </section>
+  <section class="section" id="eid-greetings" data-aos="fade-up" style="background-image: url('عيدك يز.png'); background-size: cover; background-position: center; padding: 100px 20px;">
+    <h2 style="text-align: center; color: white; margin-bottom: 50px;">تهنئة عيد الفطر</h2>
+  
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; max-width: 1000px; margin: auto;">
+  
+      <!-- بطاقة طارق -->
+      <div style="text-align: center;">
+        <img src="طارق المدير.jpg" alt="أ. طارق السحيلي" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid white; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+        <h3 style="color: white; margin-top: 15px;">أ. طارق السحيلي</h3>
+        <button onclick="showMessage('message1')" class="greeting-btn">قراءة التهنئة</button>
+      </div>
+  
+      <!-- بطاقة محمد -->
+      <div style="text-align: center;">
+        <img src="محمد بسام.jpg" alt="د. محمد بسام" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid white; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+        <h3 style="color: white; margin-top: 15px;">د. محمد بسام</h3>
+        <button onclick="showMessage('message2')" class="greeting-btn">قراءة التهنئة</button>
+      </div>
+  
+      <!-- بطاقة مصلح -->
+      <div style="text-align: center;">
+        <img src="مصلح.jpg" alt="أ. مصلح البلوي" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid white; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+        <h3 style="color: white; margin-top: 15px;">أ. مصلح البلوي</h3>
+        <button onclick="showMessage('message3')" class="greeting-btn">قراءة التهنئة</button>
+      </div>
+  
+      <!-- بطاقة عوض -->
+      <div style="text-align: center;">
+        <img src="عوص العمراني.jpg" alt="أ. عوض العمراني" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid white; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+        <h3 style="color: white; margin-top: 15px;">أ. عوض العمراني</h3>
+        <button onclick="showMessage('message4')" class="greeting-btn">قراءة التهنئة</button>
+      </div>
+  
+    </div>
+  
+    <!-- نوافذ التهاني -->
+    <div id="message1" class="greeting-popup" style="display:none;">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closeMessage('message1')">×</span>
+        <p> اتشرف بتقديم اسمى ايات التهاني والتبريكات بمناسبة عيد الفطر المبارك ١٤٤٦ لمقام سيدي خادم الحرمين الشريفين الملك سلمان بن عبدالعزيز ال سعود و لسمو سيدي صاحب السمو الملكي ولي العهد ورئيس مجلس الوزراء الامير محمد بن سلمان ال سعود ولصاحب السمو الملكي الامير فهد بن سلطان بن عبدالعزيز  ال سعود امير منطقة تبوك ولسعادة الدكتور عبدالإله الحديثي رئيس التجمع الصحي بمنطقة تبوك ولجميع الزملاء منسوبي تجمع تبوك الصحي  ومنسوبي مستشفى الملك خالد  وأسال الله ان يعيده علينا جميعاً باليمن والبركات اعواما عديدة ومديدة . 
+          الزملاء الكرام يطيب لنا ان تكون كلماتي هذه في الاصدار الاول لمجلة التواصل الداخلي الشهرية لمستشفى الملك خالد التابع لتجمع تبوك الصحي التي ترى النور مع صبيحة عيد الفطر المبارك لعام ١٤٤٦ ولزاماً علي هنا ان اشكر العراب الأول للتواصل بمفهومه الواسع لدي انا ولدى الكثير من ابناء منطقة تبوك لسيدي صاحب السمو الملكي الأمير فهد بن سلطان بن عبدالعزيز ال سعود امير منطقة تبوك حيث فتحت اعيننا ونحن نرى سموه في كافة المحافل والمناسبات الوطنية و الشعبية متلمساً احتياجات ابناء المنطقة في كافة امورهم وهذا هو التواصل الحقيقي بمفهومه الشامل .<br><br>مدير مستشفى الملك خالد بتبوك<br>أخوكم طارق بن عبدالرحمن السحلي</p>
+      </div>
+    </div>
+  
+    <div id="message2" class="greeting-popup" style="display:none;">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closeMessage('message2')">×</span>
+        <p>يطيب لي بأن ارفع اسمى  ايات التهاني والتبريكات بمناسبة عيد الفطر المبارك ١٤٤٦ لمقام سيدي خادم الحرمين الشريفين الملك سلمان بن عبدالعزيز ال سعود و لسمو سيدي صاحب السمو الملكي ولي العهد ورئيس مجلس الوزراء الامير محمد بن سلمان ال سعود ولصاحب السمو الملكي الامير فهد بن سلطان بن عبدالعزيز  ال سعود امير منطقة تبوك ولسعادة الدكتور عبدالإله الحديثي رئيس التجمع الصحي بمنطقة تبوك ولجميع الزملاء منسوبي تجمع تبوك الصحي  ومنسوبي مستشفى الملك خالد  وأسال الله ان يعيده علينا جميعاً باليمن والبركات اعواما عديدة ومديدة . 
+          الزملاء الكرام يطيب لنا ان تكون كلماتي هذه في الاصدار الاول لمجلة التواصل الداخلي الشهرية لمستشفى الملك خالد التابع لتجمع تبوك الصحي التي ترى النور مع صبيحة عيد الفطر المبارك لعام ١٤٤٦ ولزاماً علي هنا ان اشكر العراب الأول للتواصل بمفهومه الواسع لدي انا ولدى الكثير من ابناء منطقة تبوك لسيدي صاحب السمو الملكي الأمير فهد بن سلطان بن عبدالعزيز ال سعود امير منطقة تبوك حيث فتحت اعيننا ونحن نرى سموه في كافة المحافل والمناسبات الوطنية و الشعبية متلمساً احتياجات ابناء المنطقة في كافة امورهم وهذا هو التواصل الحقيقي بمفهومه الشامل .
+           <br><br>مساعد مدير المستشفى لتقديم الرعاية الصحية<br>أخوكم د. محمد بسام الكعابنة</p>
+      </div>
+    </div>
+  
+    <div id="message3" class="greeting-popup" style="display:none;">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closeMessage('message3')">×</span>
+        <p>لم تعد إدارات التواصل الداخلي بالمؤسسات الحكومية والغير حكومية بتلك الصورة الخاملة التي كانت عليها قبل سنوات ، اما الان ومع انطلاقة رؤية ٢٠٣٠ م تحديداً اصبح التواصل الداخلي حالياً معيار نجاح لكل منظمة عمل فمتى ما استطاع اي كيان عمل ان يزرع الألفة والمحبة بين العاملين بتبادل المشاعر الطيبة والإيجابية وزرع روح التنافس المثمر البناء بين العاملين .
+          وكل عام وانتم بخير <br><br>أخوكم / مصلح علي البلوي<br>مدير إدارة الموارد البشرية</p>
+      </div>
+    </div>
+  
+    <div id="message4" class="greeting-popup" style="display:none;">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closeMessage('message4')">×</span>
+        <p>بإسمي ونيابة عن فريق عمل إدارة التدريب يسعدنا ان نهنئكم بحلول عيد الفطر المبارك سائلين الله تعالى ان يتقبل منا ومنكم صالح الاعمال، يجب على كل موظف تطوير ذاته من خلال التعليم المستمر والتدريب ونحن في إدارة التدريب نسعى للوصول لجميع الموظفين عن طريق البرامج التدريبية التي تقدم ونأمل من الجميع الحرص على الحضور وتذكر بأن عملية التعلم لا تنتهي أبدًا ؛ هناك دائمًا شيء جديد لاكتشافه أو فهمه أو إتقانه
+          <br><br>رئيس قسم التدريب والتعليم المستمر<br>أ. عوض العمراني</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- الإنجازات -->
+  <section class="section" id="achievements" data-aos="fade-up">
+    <h2 style="color: white;">مشاركتهم إنجازاتهم</h2>
+    <div class="card">
+      <img src="انجاز التحول الرقمي.jpg" alt="إنجاز التحول الرقمي" />
+      <div class="card-body">
+        <h3>التحول الرقمي</h3>
+        <p>تم إطلاق نظام الملف الطبي الإلكتروني ArcusAir وتدريب أكثر من 800 موظف، في خطوة نوعية نحو التحول الرقمي ورفع جودة الخدمة.</p>
+      </div>
+    </div>
+  </section>
+<!-- 🎉 نشاركهم أفراحهم -->
+<section id="celebrations" class="section" data-aos="fade-up" style="padding: 100px 20px;">
+  <h2 style="text-align: center; color: #ffffff; margin-bottom: 60px;">نشاركهم أفراحهم</h2>
+
+  <div style="max-width: 1000px; margin: auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+    
+    <!-- بطاقة مولود -->
+    <div class="fancy-photo">
+      <img src="مولود.jpg" alt="مولود">
+    </div>
+
+    <!-- بطاقة مولودة -->
+    <div class="fancy-photo">
+      <img src="مولودة.jpg" alt="مولودة">
+    </div>
+
+  </div>
+</section>
+
+<!-- 📣 المشاركة في الحملات -->
+<section class="section" id="campaigns" data-aos="fade-up">
+  <h2 style="text-align: center; color: white; margin-bottom: 40px;">المشاركة في الحملات</h2>
+
+  <div style="
+  max-width: 800px;
+  margin: auto;
+  background: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url('صم\ بصحة.jpeg');
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  text-align: center;
+  color: #1e2e50;
+  font-size: 1.1em;
+  line-height: 2em;
+  margin-bottom: 60px;
+">
+  <strong style="color: #309dcf; font-size: 1.2em;">حملة "صم بصحة" بالجادة</strong><br><br>
+  شرفنا هذا المساء سعادة الدكتور <strong>عبدالإله الحديثي</strong> – حفظه الله – بحضور حملة "صم بصحة" في الجادة.<br>
+  حيث شارك في تنفيذ الحملة كل من <strong>مركز صحي المنتزه</strong> و<strong>مركز صحي العليا</strong>،<br>
+  وقد بلغ عدد المستفيدين من الحملة <strong>٩٥ مستفيدًا</strong>.
+</div>
+
+
+  <!-- صور الحملة -->
+  <div class="image-grid">
+    <div class="fancy-photo"><img src="حملة1.jpg" alt="حملة 1"></div>
+    <div class="fancy-photo"><img src="حملة2.jpg" alt="حملة 2"></div>
+    <div class="fancy-photo"><img src="حملة3.jpg" alt="حملة 3"></div>
+  </div>
+</section>
+
+
+<!-- 🤝 المشاركة في التطوع -->
+<section class="section" id="volunteering" data-aos="fade-up">
+  <h2 style="text-align: center; color: white;">المشاركة في التطوع</h2>
+
+  <div class="image-grid">
+    <div class="fancy-photo"><img src="تطوع1.jpg" alt="تطوع 1"></div>
+    <div class="fancy-photo"><img src="تطوع2.jpg" alt="تطوع 2"></div>
+    <div class="fancy-photo"><img src="تطوع3.jpg" alt="تطوع 3"></div>
+  </div>
+</section>
+
+<section class="section" id="condolences" data-aos="fade-up" style="padding: 90px 20px; background-color: #ffffff;">
+  <h2 style="text-align: center; color: #309dcf; font-size: 2.2em; margin-bottom: 50px;">نشاركهم أحزانهم</h2>
+
+  <div style="max-width: 850px; margin: auto; display: flex; flex-direction: column; gap: 35px;">
+
+    <!-- بطاقة يحيى (الصورة تحت النص) -->
+    <div style="
+      background: #1e76bb;
+      border-radius: 20px;
+      padding: 35px 25px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+      color: #ffffff;
+      font-size: 1em;
+      line-height: 2em;
+      text-align: center;
+    ">
+      <!-- نص التعزية -->
+      <div>
+        <p style="margin: 0;">
+          تنعى إدارة مستشفى الملك خالد الزميل<br>
+          <strong style="color: #ffffff;">يحيى عيسى مرشدي</strong><br><br>
+          سائلين المولى عز وجل أن يتغمده بواسع رحمته ومغفرته<br>
+          وأن يُلهم أهله وذويه الصبر والسلوان.
+        </p>
+        <p style="margin-top: 20px;">
+          قام الزملاء بإنشاء <strong>رابط صدقة عبر منصة إحسان</strong> لزميلهم – رحمه الله:<br>
+          <a href="https://ehsan.sa/DonationCampaign/Details/1565790" target="_blank" style="color: #ffd700; font-weight: bold; text-decoration: underline;">اضغط هنا للمساهمة في الصدقة</a>
+        </p>
+        <p style="margin-top: 20px;">
+          <em>
+            "إن العين لتدمع وإن القلب ليحزن، وإنا على فراقك لمحزونون.<br>
+            إنا لله وإنا إليه راجعون.<br>
+            أسأل الله العظيم رب العرش العظيم أن يرحمه ويغفر له،<br>
+            ويسكنه الفردوس الأعلى من الجنة."
+          </em>
+        </p>
+      </div>
+
+      <!-- الصورة -->
+      <div style="margin-top: 30px;">
+        <img src="يحيى صورة.jpg" alt="صورة يحيى" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+      </div>
+    </div>
+
+    <!-- بطاقة أحمد (نفس التنسيق بدون صورة) -->
+    <div style="
+      background: #1e76bb;
+      border-radius: 20px;
+      padding: 35px 25px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+      color: #ffffff;
+      font-size: 1em;
+      line-height: 2em;
+      text-align: center;
+    ">
+      <p style="margin: 0;">
+        تتقدم إدارة ومنسوبو مستشفى الملك خالد بصادق التعازي والمواساة<br>
+        للزميل <strong style="color: #ffffff;">أحمد عبدالرحمن زعير</strong> - قسم المختبر<br><br>
+        في وفاة والده.<br><br>
+        سائلين الله أن يتغمد الفقيد بواسع رحمته ومغفرته<br>
+        وأن يُلهم أهله وذويه الصبر والسلوان.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <section class="section" id="gathering" data-aos="fade-up">
+    <h2 style="text-align: center; color: #ffffff;">نُعزز روح الأُلفة واللقاء</h2>
+    <div class="card">
+      <video controls style="width: 100%; max-width: 800px; border-radius: 15px; display: block; margin: auto;">
+        <source src="فطور رمضاني.mp4" type="video/mp4">
+        المتصفح لا يدعم تشغيل الفيديو.
+      </video>
+      <div class="card-body">
+        <h3>فعالية الإفطار الرمضاني</h3>
+        <p>في أجواء رمضانية مليئة بالمحبة والتآلف، نظم المستشفى فعالية الإفطار تحت شعار "صم بصحة" بحضور الرئيس التنفيذي، تعزيزًا لروح الفريق والانتماء الوظيفي.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  
+<!-- إفطار الموظف المتميز -->
+<section class="section" id="employee-award" data-aos="fade-up" style="padding: 80px 20px;">
+  <h2 style="text-align: center; color: #ffffff;">نحفزهم للعطاء</h2>
+
+  <div style="max-width: 900px; margin: 40px auto; border-radius: 20px; padding: 20px; text-align: center;">
+
+    <h3 style="color: #ffffff;">مبادرة إفطار الموظف المتميز</h3>
+    <p style="margin-bottom: 30px; color: #ffffff;">
+      تم تكريم الموظفين الأعلى تقييمًا في قسم الطوارئ بمبادرة إفطار متميزة أقيمت بفندق هيلتون، ضمن بيئة محفزة تُكرس ثقافة التقدير والتحفيز.
+    </p>
+
+    <!-- صور الموظفين المكرمين -->
+    <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+      
+      <!-- سعد العنزي -->
+      <div style="text-align: center;">
+        <img src="سعد.jpg" alt="سعد العنزي" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #ffffff; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        <h4 style="margin-top: 10px; color: #ffffff;">سعد العنزي</h4>
+      </div>
+
+      <!-- حمود البلوي -->
+      <div style="text-align: center;">
+        <img src="حمود.jpg" alt="حمود البلوي" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #ffffff; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        <h4 style="margin-top: 10px; color: #ffffff;">حمود البلوي</h4>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="section" id="department-cards" data-aos="fade-up" style="padding: 80px 20px; background: #f7fafd;">
+  <h2 style="text-align: center; color: #325d7d; margin-bottom: 50px;">أداء الأقسام</h2>
+
+  <div class="swiper department-swiper" style="padding-bottom: 50px;">
+    <div class="swiper-wrapper">
+
+      <!-- مثال بطاقة -->
+      <div class="swiper-slide">
+        <img src="قسم الطوارئ.jpg" alt="قسم الطوارئ">
+        <h3>قسم الطوارئ</h3>
+        <p>تم تقديم الخدمات لـ <strong>....</strong> من المستفيدين خلال شهر مارس لعام 2025م.</p>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="قسم العيادات.jpg" alt="قسم العيادات">
+        <h3>قسم العيادات</h3>
+        <p>تم تقديم الخدمات لـ <strong>....</strong> من المستفيدين خلال شهر مارس لعام 2025م.</p>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="قسم الاشعة.jpg" alt="قسم الأشعة">
+        <h3>قسم الأشعة</h3>
+        <p>تم تقديم الخدمات لـ <strong>....</strong> من المستفيدين خلال شهر مارس لعام 2025م.</p>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="قسم العمليات.jpg" alt="قسم العمليات">
+        <h3>قسم العمليات</h3>
+        <p>تم تقديم الخدمات لـ <strong>....</strong> من المستفيدين خلال شهر مارس لعام 2025م.</p>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="قسم المختبر.jpeg" alt="قسم المختبر">
+        <h3>قسم المختبر</h3>
+        <p>تم تقديم الخدمات لـ <strong>....</strong> من المستفيدين خلال شهر مارس لعام 2025م.</p>
+      </div>
+
+    </div>
+
+    <!-- الأسهم -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+
+
+
+    
+  <!-- معلومة طبية -->
+  <section class="section" id="medical-info" data-aos="fade-up">
+    <h2 style="color: white;">معلومة طبية</h2>
+    <div class="card">
+      <div class="card-body">
+        <p>
+          الترمیز الطبي باستخدام ICD-10 يُعد ركيزة من ركائز نظام الرعاية الصحية، حيث يتم من خلاله توحيد تشخيصات المرضى وتحليل البيانات بدقة. وقد تم تطبيقه بمستشفى الملك خالد لرفع جودة التوثيق والفوترة والتخطيط.
+        </p>
+        <p><strong>رئيسة قسم السجلات الطبية: أ. أماني تيسير أبو طقيقة</strong></p>
+      </div>
+    </div>
+  </section>
+<!-- زر الرجوع لأعلى -->
+<button onclick="scrollToTop()" class="scroll-top" title="الرجوع للأعلى">↑</button>
+
+<footer>
+  &copy; 2025 تجمع تبوك الصحي - إدارة التواصل الداخلي
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="java.js"></script>
+</body>
+</html>
+
